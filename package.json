@@ -1,6 +1,6 @@
 {
   "name": "hexo-next-nightmode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add Night Mode support for NexT",
   "main": "index.js",
   "scripts": {

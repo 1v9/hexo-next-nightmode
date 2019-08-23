@@ -10,7 +10,7 @@ Add Night Mode support for NexT.
 ## Install
 
 ```bash
-npm i 1v9/hexo-next-nightmode
+npm i 1v9/hexo-next-nightmode#1.0.1
 ```
 
 ## Configure
@@ -24,9 +24,10 @@ next_nightmode:
   icon: lightbulb-o
   # Text for sidebar button
   text: Night Mode
-  # If true, you need to create a totally customized style file named nightmode.styl in source/_data directory.
-  # For now, merging styles is not supported.
-  custom: false
   # If ture, when you disable Night Mode, Hexo will show warning messages in your console.
   reminder: false
 ```
+
+## Custom
+
+NexT supports customizing styles, so you can custom dark mode style by yourself, check `nightmode.styl` then do your job.

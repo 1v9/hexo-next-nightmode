@@ -16,12 +16,7 @@ hexo.extend.filter.register('theme_inject', injects => {
     return;
   }
 
-  if (config.custom) {
-    injects.style.push(path.join(hexo.base_dir + 'source/_data/nightmode.styl'));
-  } else {
-    injects.style.push(path.join(__dirname, 'nightmode.styl'));
-  }
-
+  injects.style.push(path.join(__dirname, 'nightmode.styl'));
   injects.head.raw('nightmode-head', utils.getFileContent(__dirname, 'head.swig'), {}, {cache: true});
   injects.sidebar.raw('nightmode-sidebar', utils.getFileContent(__dirname, 'sidebar.swig'), {}, {cache: true});
   injects.bodyEnd.raw('nightmode-bodyEnd', utils.getFileContent(__dirname, 'bodyEnd.swig'), {}, {cache: true});
