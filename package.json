@@ -1,0 +1,26 @@
+{
+  "name": "hexo-next-nightmode",
+  "version": "1.0.0",
+  "description": "Add Night Mode support for NexT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1v9/hexo-next-nightmode.git"
+  },
+  "keywords": [
+    "hexo",
+    "next"
+  ],
+  "author": "1v9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1v9/hexo-next-nightmode/issues"
+  },
+  "homepage": "https://github.com/1v9/hexo-next-nightmode#readme",
+  "dependencies": {
+    "next-util": "github:theme-next/next-util"
+  }
+}
