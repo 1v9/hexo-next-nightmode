@@ -10,7 +10,7 @@ Add Night Mode support for NexT.
 ## Install
 
 ```bash
-npm i 1v9/hexo-next-nightmode#1.0.1
+npm i 1v9/hexo-next-nightmode
 ```
 
 ## Configure
