@@ -3,6 +3,6 @@
     'use strict';
     let theme = localStorage.getItem('theme');
     if (!theme) return;
-    d.documentElement.className += ' dark-theme';
+    d.documentElement.className += ' darktheme';
   })(window, document);
 </script>
