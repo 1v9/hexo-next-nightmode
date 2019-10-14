@@ -44,7 +44,13 @@ npm i @1v9/hexo-next-nightmode
 npm un @1v9/hexo-next-nightmode
 ```
 
-## Configure
+## Usage
+
+### Hotkey
+
+Try pressing **Alt + X** to toggle the mode, it's same as clicking sidebar button.
+
+### Configure
 
 You can add follow options in both **hexo** or **theme** `_config.yml`.
 
