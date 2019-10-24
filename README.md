@@ -61,7 +61,7 @@ next_nightmode:
   icon: lightbulb-o
   # Text for sidebar button
   text: Night Mode
-  # If ture, when you disable Night Mode, Hexo will show warning messages in your console.
+  # If true, when you disable Night Mode, Hexo will show warning messages in your console.
   reminder: false
 ```
 
