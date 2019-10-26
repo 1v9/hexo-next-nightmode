@@ -9,33 +9,16 @@ Add Night Mode support for NexT.
 
 ## Install
 
-> This plugin has been [released](https://github.com/1v9/hexo-next-nightmode/packages/26527) to [GitHub Package Registry](https://github.com/features/package-registry) and you can choose one of the following ways to install it.
-
 ### Default
 
 ```bash
-npm i 1v9/hexo-next-nightmode
+npm i naeternitas/hexo-next-nightmode
 ```
 
 If the above installation failed, please try:
 
 ```bash
-npm i 1v9/hexo-next-nightmode#master
-```
-
-### Via Github
-
-```bash
-npm i https://github.com/1v9/hexo-next-nightmode
-```
-
-### Via GitHub Package Registry (Not Recommended)
-
-> You need to configure authToken for GPR by yourself
-
-```bash
-npm config set @1v9:registry=https://npm.pkg.github.com
-npm i @1v9/hexo-next-nightmode
+npm i naeternitas/hexo-next-nightmode#master
 ```
 
 ## Uninstall
