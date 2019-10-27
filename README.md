@@ -38,12 +38,6 @@ npm config set @1v9:registry=https://npm.pkg.github.com
 npm i @1v9/hexo-next-nightmode
 ```
 
-## Uninstall
-
-```bash
-npm un @1v9/hexo-next-nightmode
-```
-
 ## Usage
 
 ### Hotkey
@@ -66,9 +60,9 @@ next_nightmode:
   # Debugger for alpha option below.
   debugger: false
   # Support experimental prefers-color-scheme media query.
-  # For now if alpha mode enabled, the toggle button in sidebar will be disabled.
-  # THe only way to toggle night mode is your system color scheme settings.
-  # Also ee: https://caniuse.com/#feat=prefers-color-scheme.
+  # For now if alpha mode enabled, sidebar button will be disabled.
+  # The only way to toggle night mode is your system color scheme settings.
+  # Also see: https://caniuse.com/#feat=prefers-color-scheme.
   alpha: false
 ```
 
