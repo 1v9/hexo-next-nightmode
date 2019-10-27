@@ -57,14 +57,21 @@ You can add follow options in both **hexo** or **theme** `_config.yml`.
 ```yml
 next_nightmode:
   enable: false
-  # FontAwesome or ForkAwesome icon in sidebar button
+  # FontAwesome or ForkAwesome icon in sidebar button.
   icon: lightbulb-o
-  # Text for sidebar button
+  # Text for sidebar button.
   text: Night Mode
   # If true, when you disable Night Mode, Hexo will show warning messages in your console.
   reminder: false
+  # Debugger for alpha option below.
+  debugger: false
+  # Support experimental prefers-color-scheme media query.
+  # For now if alpha mode enabled, the toggle button in sidebar will be disabled.
+  # THe only way to toggle night mode is your system color scheme settings.
+  # Also ee: https://caniuse.com/#feat=prefers-color-scheme.
+  alpha: false
 ```
 
 ## Custom
 
-NexT supports customizing styles, so you can custom dark mode style by yourself, check `nightmode.styl` then do your job.
+NexT supports customizing styles, so you can custom dark mode style by yourself, check `css/scheme.styl` then do your job.

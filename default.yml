@@ -3,3 +3,5 @@ next_nightmode:
   icon: lightbulb-o
   text: Night Mode
   reminder: false
+  debugger: false
+  alpha: false

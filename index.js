@@ -16,8 +16,11 @@ hexo.extend.filter.register('theme_inject', injects => {
     return;
   }
 
-  injects.style.push(path.join(__dirname, 'nightmode.styl'));
+  injects.style.push(path.join(__dirname, 'css/scheme.styl'));
   injects.head.raw('nightmode-head', utils.getFileContent(__dirname, 'head.swig'), {}, {cache: true});
-  injects.sidebar.raw('nightmode-sidebar', utils.getFileContent(__dirname, 'sidebar.swig'), {}, {cache: true});
+  if (!config.alpha) {
+    injects.style.push(path.join(__dirname, 'css/button.styl'));
+    injects.sidebar.raw('nightmode-sidebar', utils.getFileContent(__dirname, 'sidebar.swig'), {}, {cache: true});
+  }
   injects.bodyEnd.raw('nightmode-bodyEnd', utils.getFileContent(__dirname, 'bodyEnd.swig'), {}, {cache: true});
 });
