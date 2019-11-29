@@ -3,10 +3,11 @@
 'use strict';
 
 const path = require('path');
-const utils = require('next-util');
+const Util = require('next-util');
+const utils = new Util(hexo, __dirname);
 
 hexo.extend.filter.register('theme_inject', injects => {
-  let config = utils.defaultConfigFile(hexo, 'next_nightmode', __dirname, 'default.yml');
+  let config = utils.defaultConfigFile('next_nightmode', 'default.yml');
 
   if (!config.enable) {
     if (config.reminder) {
@@ -16,11 +17,11 @@ hexo.extend.filter.register('theme_inject', injects => {
     return;
   }
 
-  injects.style.push(path.join(__dirname, 'css/scheme.styl'));
-  injects.head.raw('nightmode-head', utils.getFileContent(__dirname, 'head.swig'), {}, {cache: true});
+  injects.style.push(path.join('css/scheme.styl'));
+  injects.head.raw('nightmode-head', utils.getFileContent('head.swig'), {}, {cache: true});
   if (!config.alpha) {
-    injects.style.push(path.join(__dirname, 'css/button.styl'));
-    injects.sidebar.raw('nightmode-sidebar', utils.getFileContent(__dirname, 'sidebar.swig'), {}, {cache: true});
+    injects.style.push(path.join('css/button.styl'));
+    injects.sidebar.raw('nightmode-sidebar', utils.getFileContent('sidebar.swig'), {}, {cache: true});
   }
-  injects.bodyEnd.raw('nightmode-bodyEnd', utils.getFileContent(__dirname, 'bodyEnd.swig'), {}, {cache: true});
+  injects.bodyEnd.raw('nightmode-bodyEnd', utils.getFileContent('bodyEnd.swig'), {}, {cache: true});
 });
