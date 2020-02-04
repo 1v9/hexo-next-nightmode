@@ -6,7 +6,7 @@
       if (userScheme) d.documentElement.className += ' darkScheme';
       const btn = d.querySelector('.night-btn');
       w.addEventListener('keydown', e => {
-        if (e.altKey && e.keyCode == 88) btn.click();
+        if (e.altKey && e.code === 'KeyX') btn.click();
       });
       btn.addEventListener('click', () => {
         d.documentElement.classList.toggle('darkScheme');
@@ -27,7 +27,7 @@
           d.documentElement.className -= ' darkScheme';
         }
         {%- if theme.next_nightmode.debugger %}
-          return console.log(`NexT Night Alpha Mode is ${enable ? '🌒 On ' : '☀️ Off'} - triggered by system color scheme.`);
+          return console.log(`NexT Night Alpha Mode is ${enable ? '🌒 On ' : '☀️ Off'} - triggered by device scheme change.`);
         {%- endif %}
       });
     {%- endif %}

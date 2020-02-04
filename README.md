@@ -46,7 +46,7 @@ Try pressing **Alt + X** to toggle the mode, it's same as clicking sidebar butto
 
 ### Configure
 
-You can add follow options in both **hexo** or **theme** `_config.yml`.
+You can add follow options in **hexo** or **theme** `_config.yml`.
 
 ```yml
 next_nightmode:
@@ -61,7 +61,7 @@ next_nightmode:
   debugger: false
   # Support experimental prefers-color-scheme media query.
   # For now if alpha mode enabled, sidebar button will be disabled.
-  # The only way to toggle night mode is your system color scheme settings.
+  # The only way to toggle night mode is changing your device scheme.
   # Also see: https://caniuse.com/#feat=prefers-color-scheme.
   alpha: false
 ```
@@ -69,3 +69,11 @@ next_nightmode:
 ## Custom
 
 NexT supports customizing styles, so you can custom dark mode style by yourself, check `css/scheme.styl` then do your job.
+
+Also if you don't like this plugin based on JavaScript, you can use a simple CSS method.
+
+```css
+@media (prefers-color-scheme: dark) {
+  /* do everything yo want */
+}
+```
